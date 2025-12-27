@@ -66,17 +66,28 @@ function initMenu() {
     });
 }
 
-// Language switch
+// Language switch - ОБНОВЛЕННАЯ ВЕРСИЯ
 function initLanguageSwitch() {
     langBtns.forEach(btn => {
         btn.addEventListener('click', () => {
+            const lang = btn.dataset.lang;
+            
+            // Update active button
             langBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            // Here you would typically implement actual language switching
-            console.log('Language switched to:', btn.dataset.lang);
+            // Translate the page
+            translatePage(lang);
+            
+            // Save language preference
+            localStorage.setItem('preferred-language', lang);
+            
+            console.log('Language switched to:', lang);
         });
     });
+    
+    // Initialize translation on page load
+    initTranslation();
 }
 
 // Reviews slider

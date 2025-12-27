@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+<base target="_blank">
 </head>
 <body>
     <!-- Navigation -->
@@ -15,15 +16,15 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <h2>Pine & Brass</h2>
-                <span>Kaffe og bakeri</span>
+                <span data-key="nav-tagline">Kaffe og bakeri</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Hjem</a></li>
-                <li><a href="#menu" class="nav-link">Meny</a></li>
-                <li><a href="#specials" class="nav-link">Spesialer</a></li>
-                <li><a href="#about" class="nav-link">Om oss</a></li>
-                <li><a href="#reviews" class="nav-link">Anmeldelser</a></li>
-                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li><a href="#home" class="nav-link" data-key="nav-home">Hjem</a></li>
+                <li><a href="#menu" class="nav-link" data-key="nav-menu">Meny</a></li>
+                <li><a href="#specials" class="nav-link" data-key="nav-specials">Spesialer</a></li>
+                <li><a href="#about" class="nav-link" data-key="nav-about">Om oss</a></li>
+                <li><a href="#reviews" class="nav-link" data-key="nav-reviews">Anmeldelser</a></li>
+                <li><a href="#contact" class="nav-link" data-key="nav-contact">Kontakt</a></li>
             </ul>
             <div class="language-switch">
                 <button class="lang-btn active" data-lang="no">NO</button>
@@ -46,14 +47,14 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="title-line">Den beste</span>
-                    <span class="title-highlight">kaffen</span>
+                    <span class="title-line" data-key="hero-title-line1">Den beste</span>
+                    <span class="title-highlight" data-key="hero-title-highlight">kaffen</span>
                 </h1>
-                <p class="hero-subtitle">Allerede i din by – spesialkaffe og fersk bakst.</p>
-                <p class="hero-description">En liten, koselig kaffebar i hjertet av Trondheim. Vi brygger håndlaget kaffe, liker rolig jazz og vil at alle skal føle seg som hjemme.</p>
+                <p class="hero-subtitle" data-key="hero-subtitle">Allerede i din by – spesialkaffe og fersk bakst.</p>
+                <p class="hero-description" data-key="hero-description">En liten, koselig kaffebar i hjertet av Trondheim. Vi brygger håndlaget kaffe, liker rolig jazz og vil at alle skal føle seg som hjemme.</p>
                 <div class="hero-buttons">
-                    <a href="#menu" class="btn btn-primary">Se meny</a>
-                    <a href="#specials" class="btn btn-secondary">Dagens spesial</a>
+                    <a href="#menu" class="btn btn-primary" data-key="btn-primary">Se meny</a>
+                    <a href="#specials" class="btn btn-secondary" data-key="btn-secondary">Dagens spesial</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -69,26 +70,26 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Om Pine & Brass</h2>
-                <p>Vår historie</p>
+                <h2 data-key="about-title">Om Pine & Brass</h2>
+                <p data-key="about-subtitle">Vår historie</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Velkommen til vår lille oase</h3>
-                    <p>Pine & Brass åpnet dørene i 2019 med en enkel visjon: å skape et sted der folk kan stoppe opp, nyte øyeblikket og smake ekte kvalitetskaffe. Vi er stolte av vårt håndverk og bruker bare de fineste kaffebønnene fra bærekraftige gårder.</p>
-                    <p>Hver kopp brygges med omsorg, hver bakvare lages fra bunnen av. Våre baristaer er ikke bare ansatte – de er kaffeentusiaster som elsker å dele sin lidenskap med deg.</p>
+                    <h3 data-key="about-heading">Velkommen til vår lille oase</h3>
+                    <p data-key="about-text1">Pine & Brass åpnet dørene i 2019 med en enkel visjon: å skape et sted der folk kan stoppe opp, nyte øyeblikket og smake ekte kvalitetskaffe. Vi er stolte av vårt håndverk og bruker bare de fineste kaffebønnene fra bærekraftige gårder.</p>
+                    <p data-key="about-text2">Hver kopp brygges med omsorg, hver bakvare lages fra bunnen av. Våre baristaer er ikke bare ansatte – de er kaffeentusiaster som elsker å dele sin lidenskap med deg.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <h4>5+</h4>
-                            <p>År med kvalitet</p>
+                            <p data-key="about-years">År med kvalitet</p>
                         </div>
                         <div class="stat">
                             <h4>1000+</h4>
-                            <p>Fornøyde kunder</p>
+                            <p data-key="about-customers">Fornøyde kunder</p>
                         </div>
                         <div class="stat">
                             <h4>15+</h4>
-                            <p>Kaffesorter</p>
+                            <p data-key="about-coffee-types">Kaffesorter</p>
                         </div>
                     </div>
                 </div>
@@ -111,21 +112,21 @@
     <section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
-                <h2>Vår meny</h2>
-                <p>Handcrafted med kjærlighet</p>
+                <h2 data-key="menu-title">Vår meny</h2>
+                <p data-key="menu-subtitle">Handcrafted med kjærlighet</p>
             </div>
             <div class="menu-categories">
-                <button class="category-btn active" data-category="coffee">Kaffe</button>
-                <button class="category-btn" data-category="special">Spesialdrikker</button>
-                <button class="category-btn" data-category="bakery">Bakst</button>
+                <button class="category-btn active" data-category="coffee" data-key="menu-coffee">Kaffe</button>
+                <button class="category-btn" data-category="special" data-key="menu-special">Spesialdrikker</button>
+                <button class="category-btn" data-category="bakery" data-key="menu-bakery">Bakst</button>
             </div>
             <div class="menu-grid">
                 <!-- Coffee Menu -->
                 <div class="menu-category active" id="coffee">
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Espresso</h4>
-                            <p class="item-description">Intens og rik, perfekt ekstraksjon</p>
+                            <h4 data-key="espresso-name">Espresso</h4>
+                            <p class="item-description" data-key="espresso-desc">Intens og rik, perfekt ekstraksjon</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 50</span>
@@ -134,8 +135,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Americano</h4>
-                            <p class="item-description">Espresso med varmt vann, mild og balansert</p>
+                            <h4 data-key="americano-name">Americano</h4>
+                            <p class="item-description" data-key="americano-desc">Espresso med varmt vann, mild og balansert</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 50</span>
@@ -144,8 +145,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Cappuccino</h4>
-                            <p class="item-description">Espresso, dampet melk og skum</p>
+                            <h4 data-key="cappuccino-name">Cappuccino</h4>
+                            <p class="item-description" data-key="cappuccino-desc">Espresso, dampet melk og skum</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 52</span>
@@ -154,8 +155,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Latte</h4>
-                            <p class="item-description">Myk og kremet med espresso</p>
+                            <h4 data-key="latte-name">Latte</h4>
+                            <p class="item-description" data-key="latte-desc">Myk og kremet med espresso</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 54</span>
@@ -164,8 +165,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Flat White</h4>
-                            <p class="item-description">Dobbelt espresso med silkeaktig melk</p>
+                            <h4 data-key="flat-white-name">Flat White</h4>
+                            <p class="item-description" data-key="flat-white-desc">Dobbelt espresso med silkeaktig melk</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 54</span>
@@ -174,8 +175,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Cortado</h4>
-                            <p class="item-description">Espresso med dampet melk, perfekt balanse</p>
+                            <h4 data-key="cortado-name">Cortado</h4>
+                            <p class="item-description" data-key="cortado-desc">Espresso med dampet melk, perfekt balanse</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 52</span>
@@ -184,8 +185,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Mocha</h4>
-                            <p class="item-description">Espresso med sjokolade og melk</p>
+                            <h4 data-key="mocha-name">Mocha</h4>
+                            <p class="item-description" data-key="mocha-desc">Espresso med sjokolade og melk</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 55</span>
@@ -194,8 +195,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Batch Brew</h4>
-                            <p class="item-description">Filterkaffe av dagens bønner</p>
+                            <h4 data-key="batch-brew-name">Batch Brew</h4>
+                            <p class="item-description" data-key="batch-brew-desc">Filterkaffe av dagens bønner</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 50</span>
@@ -208,8 +209,8 @@
                 <div class="menu-category" id="special">
                     <div class="menu-item featured">
                         <div class="item-info">
-                            <h4>Raf Coffee</h4>
-                            <p class="item-description">Kremet vaniljekaffe klassiker fra Russland</p>
+                            <h4 data-key="raf-name">Raf Coffee</h4>
+                            <p class="item-description" data-key="raf-desc">Kremet vaniljekaffe klassiker fra Russland</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 58</span>
@@ -218,8 +219,8 @@
                     </div>
                     <div class="menu-item featured">
                         <div class="item-info">
-                            <h4>Orange Espresso Tonic</h4>
-                            <p class="item-description">Citrus, tonic og en levende espressoshot</p>
+                            <h4 data-key="orange-tonic-name">Orange Espresso Tonic</h4>
+                            <p class="item-description" data-key="orange-tonic-desc">Forfriskende kombinasjon av citrus, tonic og en levende espressoshot</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 60</span>
@@ -228,8 +229,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Iced Orange Coffee</h4>
-                            <p class="item-description">Kald kaffe med appelsin og is</p>
+                            <h4 data-key="iced-orange-name">Iced Orange Coffee</h4>
+                            <p class="item-description" data-key="iced-orange-desc">Kald kaffe med appelsin og is</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 58</span>
@@ -238,8 +239,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Cold Brew</h4>
-                            <p class="item-description">24-timers ekstraksjon, myk og søt</p>
+                            <h4 data-key="cold-brew-name">Cold Brew</h4>
+                            <p class="item-description" data-key="cold-brew-desc">24-timers ekstraksjon, myk og søt</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 58</span>
@@ -248,8 +249,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Pour-Over (V60)</h4>
-                            <p class="item-description">Håndbrygget filterkaffe</p>
+                            <h4 data-key="pour-over-name">Pour-Over (V60)</h4>
+                            <p class="item-description" data-key="pour-over-desc">Håndbrygget filterkaffe</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 60</span>
@@ -258,8 +259,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Maple Latte</h4>
-                            <p class="item-description">Latte med ekte lønnesirup</p>
+                            <h4 data-key="maple-latte-name">Maple Latte</h4>
+                            <p class="item-description" data-key="maple-latte-desc">Latte med ekte lønnesirup</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 58</span>
@@ -272,8 +273,8 @@
                 <div class="menu-category" id="bakery">
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Croissant</h4>
-                            <p class="item-description">Fransk smørdeig, perfekt flaky</p>
+                            <h4 data-key="croissant-name">Croissant</h4>
+                            <p class="item-description" data-key="croissant-desc">Fransk smørdeig, perfekt flaky</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 32</span>
@@ -281,8 +282,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Kanelbolle</h4>
-                            <p class="item-description">Hjemmelaget med nordisk kanel</p>
+                            <h4 data-key="cinnamon-bun-name">Kanelbolle</h4>
+                            <p class="item-description" data-key="cinnamon-bun-desc">Hjemmelaget med nordisk kanel</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 35</span>
@@ -290,8 +291,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Cardamombolle</h4>
-                            <p class="item-description">Tradisjonell skandinavisk smak</p>
+                            <h4 data-key="cardamom-bun-name">Cardamombolle</h4>
+                            <p class="item-description" data-key="cardamom-bun-desc">Tradisjonell skandinavisk smak</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 35</span>
@@ -299,8 +300,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Scones</h4>
-                            <p class="item-description">Serveres varm med syltetøy</p>
+                            <h4 data-key="scones-name">Scones</h4>
+                            <p class="item-description" data-key="scones-desc">Serveres varm med syltetøy</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 28</span>
@@ -308,8 +309,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Sjokoladekake</h4>
-                            <p class="item-description">Rik og saftig, perfekt til kaffen</p>
+                            <h4 data-key="chocolate-cake-name">Sjokoladekake</h4>
+                            <p class="item-description" data-key="chocolate-cake-desc">Rik og saftig, perfekt til kaffen</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 45</span>
@@ -317,8 +318,8 @@
                     </div>
                     <div class="menu-item">
                         <div class="item-info">
-                            <h4>Carrot Cake</h4>
-                            <p class="item-description">Med kremostglasur og nøtter</p>
+                            <h4 data-key="carrot-cake-name">Carrot Cake</h4>
+                            <p class="item-description" data-key="carrot-cake-desc">Med kremostglasur og nøtter</p>
                         </div>
                         <div class="item-prices">
                             <span class="price">kr 48</span>
@@ -333,18 +334,18 @@
     <section id="specials" class="specials">
         <div class="container">
             <div class="section-header">
-                <h2>Dagens spesial</h2>
-                <p>Spesialtilbud denne uken</p>
+                <h2 data-key="specials-title">Dagens spesial</h2>
+                <p data-key="specials-subtitle">Spesialtilbud denne uken</p>
             </div>
             <div class="specials-grid">
                 <div class="special-card">
                     <div class="special-image">
                         <img src="https://kimi-web-img.moonshot.cn/img/img.freepik.com/b0a684232f8d01801803b7181c2edc460ab8576f.jpg" alt="Raf Coffee">
-                        <div class="special-badge">Populær</div>
+                        <div class="special-badge" data-key="popular-badge">Populær</div>
                     </div>
                     <div class="special-content">
-                        <h3>Raf Coffee</h3>
-                        <p>Kremet vaniljekaffe klassiker fra Russland med myk melk og espresso.</p>
+                        <h3 data-key="raf-name">Raf Coffee</h3>
+                        <p data-key="raf-desc">Kremet vaniljekaffe klassiker fra Russland med myk melk og espresso.</p>
                         <div class="special-price">
                             <span class="size">Small</span>
                             <span class="price">kr 58</span>
@@ -358,11 +359,11 @@
                 <div class="special-card">
                     <div class="special-image">
                         <img src="https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/3090f0d6939283732aadee892e8e2f470609651a.jpg" alt="Orange Espresso Tonic">
-                        <div class="special-badge">Ny</div>
+                        <div class="special-badge" data-key="new-badge">Ny</div>
                     </div>
                     <div class="special-content">
-                        <h3>Orange Espresso Tonic</h3>
-                        <p>Forfriskende kombinasjon av citrus, tonic og en livlig espressoshot.</p>
+                        <h3 data-key="orange-tonic-name">Orange Espresso Tonic</h3>
+                        <p data-key="orange-tonic-desc">Forfriskende kombinasjon av citrus, tonic og en levende espressoshot.</p>
                         <div class="special-price">
                             <span class="size">Small</span>
                             <span class="price">kr 60</span>
@@ -381,8 +382,8 @@
     <section class="news">
         <div class="container">
             <div class="section-header">
-                <h2>Nyheter</h2>
-                <p>Siste fra Pine & Brass</p>
+                <h2 data-key="news-title">Nyheter</h2>
+                <p data-key="news-subtitle">Siste fra Pine & Brass</p>
             </div>
             <div class="news-grid">
                 <article class="news-card">
@@ -391,9 +392,9 @@
                     </div>
                     <div class="news-content">
                         <span class="news-date">15. desember 2024</span>
-                        <h3>Bryggetips</h3>
-                        <p>Slik lager du en søt cappuccino hjemme med perfekt skum og balanse.</p>
-                        <a href="#" class="read-more">Les mer →</a>
+                        <h3 data-key="brewing-tips-title">Bryggetips</h3>
+                        <p data-key="brewing-tips-text">Slik lager du en søt cappuccino hjemme med perfekt skum og balanse.</p>
+                        <a href="#" class="read-more" data-key="read-more">Les mer →</a>
                     </div>
                 </article>
                 <article class="news-card">
@@ -402,9 +403,9 @@
                     </div>
                     <div class="news-content">
                         <span class="news-date">10. desember 2024</span>
-                        <h3>Ny brenning</h3>
-                        <p>Ny nordisk brenning fra Etiopia har landet – frisk og floral med hint av citrus.</p>
-                        <a href="#" class="read-more">Les mer →</a>
+                        <h3 data-key="new-roast-title">Ny brenning</h3>
+                        <p data-key="new-roast-text">Ny nordisk brenning fra Etiopia har landet – frisk og floral med hint av citrus.</p>
+                        <a href="#" class="read-more" data-key="read-more">Les mer →</a>
                     </div>
                 </article>
             </div>
@@ -415,8 +416,8 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <div class="section-header">
-                <h2>Hva sier kundene?</h2>
-                <p>Anmeldelser fra våre gjester</p>
+                <h2 data-key="reviews-title">Hva sier kundene?</h2>
+                <p data-key="reviews-subtitle">Anmeldelser fra våre gjester</p>
             </div>
             <div class="reviews-slider">
                 <div class="review-card">
@@ -431,7 +432,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"Fantastisk kaffe og koselig atmosfære! Jeg kommer hit hver morgen før jobb. Baristaene er alltid hyggelige og kaffen er topp kvalitet. Anbefaler deres Flat White!"</p>
+                    <p class="review-text" data-key="anna-review">"Fantastisk kaffe og koselig atmosfære! Jeg kommer hit hver morgen før jobb. Baristaene er alltid hyggelige og kaffen er topp kvalitet. Anbefaler deres Flat White!"</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
@@ -445,7 +446,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"Beste kaffebaren i Trondheim! Elsker deres Orange Espresso Tonic – så forfriskende og unik. Interiøret er også nydelig med den skandinaviske stilen."</p>
+                    <p class="review-text" data-key="erik-review">"Beste kaffebaren i Trondheim! Elsker deres Orange Espresso Tonic – så forfriskende og unik. Interiøret er også nydelig med den skandinaviske stilen."</p>
                 </div>
                 <div class="review-card">
                     <div class="review-header">
@@ -459,7 +460,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="review-text">"Perfekt sted for å jobbe med laptop. God wifi, deilig kaffe og fersk bakst. Kanelbullene deres er himmelske! Alltid god musikk og avslappet stemning."</p>
+                    <p class="review-text" data-key="maria-review">"Perfekt sted for å jobbe med laptop. God wifi, deilig kaffe og fersk bakst. Kanelbullene deres er himmelske! Alltid god musikk og avslappet stemning."</p>
                 </div>
             </div>
             <div class="reviews-nav">
@@ -474,62 +475,62 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Besøk oss</h2>
-                <p>Finn veien til Pine & Brass</p>
+                <h2 data-key="contact-title">Besøk oss</h2>
+                <p data-key="contact-subtitle">Finn veien til Pine & Brass</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info-form">
                     <div class="contact-info">
                         <div class="contact-item">
-                            <h4>Åpningstider</h4>
-                            <p>Hver dag: 08:00–20:00</p>
-                            <p class="note">Ingen hviledager – vi er alltid her for deg!</p>
+                            <h4 data-key="opening-hours">Åpningstider</h4>
+                            <p data-key="daily-hours">Hver dag: 08:00–20:00</p>
+                            <p class="note" data-key="no-rest-day">Ingen hviledager – vi er alltid her for deg!</p>
                         </div>
                         <div class="contact-item">
-                            <h4>Adresse</h4>
-                            <p>Geelmuygens gate 2</p>
-                            <p>7012 Trondheim</p>
+                            <h4 data-key="address-title">Adresse</h4>
+                            <p data-key="address-line1">Geelmuygens gate 2</p>
+                            <p data-key="address-line2">7012 Trondheim</p>
                         </div>
                         <div class="contact-item">
-                            <h4>Kontakt</h4>
-                            <p>+47 470 00 000</p>
-                            <p>hello@pineandbrass.coffee</p>
+                            <h4 data-key="contact-title">Kontakt</h4>
+                            <p data-key="phone">+47 470 00 000</p>
+                            <p data-key="email">hello@pineandbrass.coffee</p>
                         </div>
                     </div>
                     
                     <!-- Contact Form -->
                     <div class="contact-form-container">
-                        <h3>Send oss en melding</h3>
+                        <h3 data-key="contact-form-title">Send oss en melding</h3>
                         <form id="contact-form" class="contact-form">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Ditt navn *" required>
+                                <input type="text" id="name" name="name" data-key="form-name" placeholder="Ditt navn *" required>
                                 <span class="error-message" id="name-error"></span>
                             </div>
                             
                             <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Din e-post *" required>
+                                <input type="email" id="email" name="email" data-key="form-email" placeholder="Din e-post *" required>
                                 <span class="error-message" id="email-error"></span>
                             </div>
                             
                             <div class="form-group">
-                                <input type="tel" id="phone" name="phone" placeholder="Telefon (valgfritt)">
+                                <input type="tel" id="phone" name="phone" data-key="form-phone" placeholder="Telefon (valgfritt)">
                             </div>
                             
                             <div class="form-group">
                                 <select id="subject" name="subject" required>
-                                    <option value="">Velg emne *</option>
-                                    <option value="general">Generell henvendelse</option>
-                                    <option value="booking">Booking/Reservasjon</option>
-                                    <option value="catering">Catering</option>
-                                    <option value="feedback">Tilbakemelding</option>
-                                    <option value="partnership">Samarbeid</option>
-                                    <option value="other">Annet</option>
+                                    <option value="" data-key="form-subject">Velg emne *</option>
+                                    <option value="general" data-key="form-subject-general">Generell henvendelse</option>
+                                    <option value="booking" data-key="form-subject-booking">Booking/Reservasjon</option>
+                                    <option value="catering" data-key="form-subject-catering">Catering</option>
+                                    <option value="feedback" data-key="form-subject-feedback">Tilbakemelding</option>
+                                    <option value="partnership" data-key="form-subject-partnership">Samarbeid</option>
+                                    <option value="other" data-key="form-subject-other">Annet</option>
                                 </select>
                                 <span class="error-message" id="subject-error"></span>
                             </div>
                             
                             <div class="form-group">
-                                <textarea id="message" name="message" rows="5" placeholder="Din melding *" required></textarea>
+                                <textarea id="message" name="message" rows="5" data-key="form-message" placeholder="Din melding *" required></textarea>
                                 <span class="error-message" id="message-error"></span>
                             </div>
                             
@@ -537,20 +538,20 @@
                                 <label class="checkbox-label">
                                     <input type="checkbox" id="privacy" name="privacy" required>
                                     <span class="checkmark"></span>
-                                    Jeg godtar at Pine & Brass Coffee kan kontakte meg angående denne henvendelsen *
+                                    <span data-key="form-privacy">Jeg godtar at Pine & Brass Coffee kan kontakte meg angående denne henvendelsen *</span>
                                 </label>
                                 <span class="error-message" id="privacy-error"></span>
                             </div>
                             
                             <button type="submit" class="btn btn-primary submit-btn">
-                                <span class="btn-text">Send melding</span>
+                                <span class="btn-text" data-key="form-submit">Send melding</span>
                                 <span class="btn-loading" style="display: none;">Sender...</span>
                             </button>
                             
                             <div class="form-success" id="form-success" style="display: none;">
                                 <div class="success-icon">✓</div>
-                                <h4>Takk for din melding!</h4>
-                                <p>Vi har mottatt henvendelsen din og vil svare deg så snart som mulig.</p>
+                                <h4 data-key="form-success-title">Takk for din melding!</h4>
+                                <p data-key="form-success-text">Vi har mottatt henvendelsen din og vil svare deg så snart som mulig.</p>
                             </div>
                         </form>
                     </div>
@@ -575,32 +576,32 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Pine & Brass</h3>
-                    <p>Kaffe og bakeri</p>
-                    <p class="footer-description">En liten, koselig kaffebar i hjertet av Trondheim. Vi bryr oss om kvalitet, bærekraft og gode opplevelser.</p>
+                    <p data-key="nav-tagline">Kaffe og bakeri</p>
+                    <p class="footer-description" data-key="footer-description">En liten, koselig kaffebar i hjertet av Trondheim. Vi bryr oss om kvalitet, bærekraft og gode opplevelser.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Nettsted</h4>
+                        <h4 data-key="footer-website">Nettsted</h4>
                         <ul>
-                            <li><a href="#home">Hjem</a></li>
-                            <li><a href="#menu">Meny</a></li>
-                            <li><a href="#specials">Spesialer</a></li>
-                            <li><a href="#about">Om oss</a></li>
+                            <li><a href="#home" data-key="nav-home">Hjem</a></li>
+                            <li><a href="#menu" data-key="nav-menu">Meny</a></li>
+                            <li><a href="#specials" data-key="nav-specials">Spesialer</a></li>
+                            <li><a href="#about" data-key="nav-about">Om oss</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Tjenester</h4>
+                        <h4 data-key="footer-services">Tjenester</h4>
                         <ul>
-                            <li><a href="#contact">Kontakt</a></li>
-                            <li><a href="#reviews">Anmeldelser</a></li>
-                            <li><a href="#">Bestilling</a></li>
-                            <li><a href="#">Katalog</a></li>
+                            <li><a href="#contact" data-key="nav-contact">Kontakt</a></li>
+                            <li><a href="#reviews" data-key="nav-reviews">Anmeldelser</a></li>
+                            <li><a href="#" data-key="footer-ordering">Bestilling</a></li>
+                            <li><a href="#" data-key="footer-catalog">Katalog</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Pine & Brass Coffee. Alle rettigheter forbeholdt.</p>
+                <p>&copy; 2024 Pine & Brass Coffee. <span data-key="footer-rights">Alle rettigheter forbeholdt.</span></p>
                 <div class="social-links">
                     <a href="#" class="social-link">◎</a>
                     <a href="#" class="social-link">VK</a>
@@ -611,6 +612,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
